@@ -2,12 +2,12 @@
   "stats": {
     "suites": 11,
     "tests": 9,
-    "passes": 6,
+    "passes": 7,
     "pending": 0,
-    "failures": 3,
-    "start": "2023-06-10T10:41:28.309Z",
-    "end": "2023-06-10T10:41:28.625Z",
-    "duration": 316
+    "failures": 2,
+    "start": "2023-06-14T19:54:02.024Z",
+    "end": "2023-06-14T19:54:02.344Z",
+    "duration": 320
   },
   "tests": [
     {
@@ -20,7 +20,7 @@
     {
       "title": "appends a cat to the end of the cats array",
       "fullTitle": "index.js Array functions destructivelyAppendCat(name) appends a cat to the end of the cats array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -48,7 +48,7 @@
     {
       "title": "appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions appendCat(name) appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -62,14 +62,12 @@
     {
       "title": "removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions removeLastCat() removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected [ 3 ] to have the same ordered members as [ 'Milo', 'Otis' ]",
-        "showDiff": true,
-        "actual": "[\n  3\n]",
-        "expected": "[\n  \"Milo\"\n  \"Otis\"\n]",
-        "stack": "AssertionError: expected [ 3 ] to have the same ordered members as [ 'Milo', 'Otis' ]\n    at Context.<anonymous> (test/indexTest.js:67:49)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "message": "expected undefined to be an array",
+        "showDiff": false,
+        "stack": "AssertionError: expected undefined to be an array\n    at Context.<anonymous> (test/indexTest.js:67:49)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     },
     {
@@ -78,34 +76,22 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected [ 'Garfield' ] to have the same ordered members as [ 'Otis', 'Garfield' ]",
-        "showDiff": true,
-        "actual": "[\n  \"Garfield\"\n]",
-        "expected": "[\n  \"Otis\"\n  \"Garfield\"\n]",
-        "stack": "AssertionError: expected [ 'Garfield' ] to have the same ordered members as [ 'Otis', 'Garfield' ]\n    at Context.<anonymous> (test/indexTest.js:75:50)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "stack": "ReferenceError: removeFirstCat is not defined\n    at Context.<anonymous> (test/indexTest.js:75:9)\n    at process.processImmediate (node:internal/timers:478:21)",
+        "message": "removeFirstCat is not defined"
       }
     }
   ],
   "pending": [],
   "failures": [
     {
-      "title": "prepends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "fullTitle": "index.js Array functions prependCat(name) prepends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
       "title": "removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions removeLastCat() removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected [ 3 ] to have the same ordered members as [ 'Milo', 'Otis' ]",
-        "showDiff": true,
-        "actual": "[\n  3\n]",
-        "expected": "[\n  \"Milo\"\n  \"Otis\"\n]",
-        "stack": "AssertionError: expected [ 3 ] to have the same ordered members as [ 'Milo', 'Otis' ]\n    at Context.<anonymous> (test/indexTest.js:67:49)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "message": "expected undefined to be an array",
+        "showDiff": false,
+        "stack": "AssertionError: expected undefined to be an array\n    at Context.<anonymous> (test/indexTest.js:67:49)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     },
     {
@@ -114,11 +100,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected [ 'Garfield' ] to have the same ordered members as [ 'Otis', 'Garfield' ]",
-        "showDiff": true,
-        "actual": "[\n  \"Garfield\"\n]",
-        "expected": "[\n  \"Otis\"\n  \"Garfield\"\n]",
-        "stack": "AssertionError: expected [ 'Garfield' ] to have the same ordered members as [ 'Otis', 'Garfield' ]\n    at Context.<anonymous> (test/indexTest.js:75:50)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "stack": "ReferenceError: removeFirstCat is not defined\n    at Context.<anonymous> (test/indexTest.js:75:9)\n    at process.processImmediate (node:internal/timers:478:21)",
+        "message": "removeFirstCat is not defined"
       }
     }
   ],
@@ -133,7 +116,7 @@
     {
       "title": "appends a cat to the end of the cats array",
       "fullTitle": "index.js Array functions destructivelyAppendCat(name) appends a cat to the end of the cats array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -161,7 +144,14 @@
     {
       "title": "appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions appendCat(name) appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 1,
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "prepends a cat to the cats array and returns a new array, leaving the cats array unchanged",
+      "fullTitle": "index.js Array functions prependCat(name) prepends a cat to the cats array and returns a new array, leaving the cats array unchanged",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }
